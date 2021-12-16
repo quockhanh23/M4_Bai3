@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="name: ${name}">
+    <h2 th:if="${name=='khanh'}" th:text="${name}"></h2>
+    <input type="text" th:value="${name}">
+</div>
+</body>
+</html>
